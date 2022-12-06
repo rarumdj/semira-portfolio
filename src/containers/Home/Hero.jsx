@@ -9,7 +9,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Hero = () => {
   return (
     <section id="home" className="header-bg ">
-      <div className="pt-20 2xl:h-[1168px] lg:h-screen  container mx-auto flex flex-col items-center w-full px-8 ">
+      <div className="pt-20 2xl:h-[1068px] lg:h-screen  container mx-auto flex flex-col items-center w-full px-8 ">
         <div className="flex flex-col items-center h-full relative w-full">
           <h1 className="text-white text-center lg:text-6xl md:text-5xl sm:text-4xl text-3xl md:mt-40 mt-16 custom-font relative">
             <span className="relative custom-font">
@@ -25,9 +25,9 @@ const Hero = () => {
             Experiences...
           </h1>
 
-          <div className="mt-16 lg:absolute lg:bottom-0 lg:translate-y-2 md:px-16">
+          <div className="mt-16 lg:absolute lg:bottom-0 lg:translate-y-2 xl:px-16 lg:px-0">
             <div className="grid md:grid-cols-2 md:items-end md:justify-start items-center justify-center w-full">
-              <div className="flex rounded-2xl w-full relative pb-[80%] md:mb-0 mb-24">
+              <div className="flex w-full relative pb-[80%] md:mb-0 mb-24">
                 {/* <div className="absolute inset-0 m-auto w-full h-full">
               <img
                 src={semira}
@@ -40,19 +40,17 @@ const Hero = () => {
                     alt={semira}
                     effect="blur"
                     placeholderSrc={semira}
-                    // height={image.height}
                     src={semira} // use normal <img> attributes as props
-                    // width={image.width}
-                    // className="absolute inset-0 md:translate-x-2 -translate-y-2 md:h-full px-10"
+                    className="md:translate-y-5 md:h-full sm:px-10"
                   />
                 </div>
               </div>
 
-              <div className="text-white h-full flex flex-col justify-center ">
+              <div className="text-white h-full flex flex-col justify-center pt-10 ">
                 <h1 className="custom-font lg:text-lg text-base mb-2">
                   Hi, I’m Semira Yesufu.
                 </h1>
-                <p className="lg:text-base md:text-xs sm:text-sm leading-relaxed lg:w-9/12 text-justify ">
+                <p className="lg:text-base md:text-xs sm:text-sm leading-relaxed lg:w-9/12 md:w-11/12 text-justify ">
                   I’m a product designer who enjoys crafting solutions
                   influenced by empathetic research, minimalistic visuals,
                   content design, and business strategy. Over the last few

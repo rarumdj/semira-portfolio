@@ -38,8 +38,8 @@ const Works = () => {
   return (
     <div className="md:py-24 py-20 flex justify-center section-bg">
       <div className="flex flex-col mx-auto px-6 lg:px-16 item justify-center w-screen max-w-[100rem]">
-        <div className="text-base text-white flex md:mb-16 mb-10">
-          SELECTED-WORKS <span className="text-xs ml-2 mb-4">5</span>
+        <div className="text-base text-[#C4C4C4] flex md:mb-16 mb-10">
+          SELECTED-WORKS <span className="text-xs ml-2 mb-4 text-white">5</span>
         </div>
         <div className="md:grid md:grid-cols-2 gap-6 hidden">
           {WorkList.map((item, index) => (

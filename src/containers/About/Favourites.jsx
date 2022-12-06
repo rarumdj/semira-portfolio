@@ -5,6 +5,7 @@ import CenterImg from "../../assets/images/centerframe.webp";
 import LeftFrame from "../../assets/images/leftframe.webp";
 import RightFrame from "../../assets/images/rightframe.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Favourites = () => {
   return (
@@ -26,37 +27,39 @@ const Favourites = () => {
 
           <div className="flex md:flex-nowrap flex-wrap md:gap-0 gap-6 w-full 2xl:max-w-7xl xl:max-w-4xl max-w-xl justify-center items-center px-30">
             <div className="flex w-full relative md:pb-[45%] pb-[130%] md:mt-36 mt-0 md:-rotate-[20deg] ">
-              <div className="absolute inset-0 m-auto w-auto h-full">
+              <div className="absolute flex inset-0 m-auto w-auto h-full">
                 <LazyLoadImage
                   alt={LeftFrame}
-                  // effect="blur"
+                  effect="blur"
                   src={LeftFrame} // use normal <img> attributes as props
-                  className="absolute inset-0 translate-x-2 -translate-y-2 w-auto h-full"
+                  className=" inset-0 translate-x-2 -translate-y-2 w-auto h-full"
                 />
               </div>
             </div>
             <div className="flex w-full relative md:pb-[45%] pb-[130%] -z-10 ">
-              <div className="absolute inset-0 m-auto w-auto h-full">
+              <div className="absolute flex inset-0 m-auto w-auto h-full">
                 <LazyLoadImage
                   alt={CenterImg}
-                  // effect="blur"
+                  effect="blur"
                   src={CenterImg} // use normal <img> attributes as props
-                  className="absolute inset-0 translate-x-2 -translate-y-2 w-auto h-full"
+                  className=" inset-0 translate-x-2 -translate-y-2 w-auto h-full"
                 />
               </div>
             </div>
             <div className="flex w-full relative md:pb-[45%] pb-[130%] md:mt-36 mt-0 md:rotate-[22deg]">
-              <div className="absolute inset-0 m-auto w-auto h-full">
+              <div className="absolute flex inset-0 m-auto w-auto h-full">
                 <LazyLoadImage
                   alt={RightFrame}
-                  // effect="blur"
+                  effect="blur"
                   src={RightFrame} // use normal <img> attributes as props
-                  className="absolute inset-0 translate-x-2 -translate-y-2 w-auto h-full"
+                  className=" inset-0 translate-x-2 -translate-y-2 w-auto h-full"
                 />
               </div>
             </div>
           </div>
-          <Zigzag className="xl:p-0 p-1 mt-6" />
+          <div className="px-4">
+            <Zigzag className="xl:p-0 p-1 mt-6" />
+          </div>
         </div>
       </div>
     </div>
