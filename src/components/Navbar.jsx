@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Link, Navigate, NavLink, useLocation } from "react-router-dom";
+import { Navigate, NavLink, useLocation } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/images/Logo.svg";
 
 const Navbar = () => {

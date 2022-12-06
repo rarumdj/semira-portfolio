@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react'
 import React from 'react'
 
 const Testimonial = () => {
+  
   return (
     <div className="md:py-24 py-20 flex justify-center">
       <div className="flex flex-col mx-auto px-6 lg:px-16 item justify-center items-center w-screen max-w-[100rem]">
