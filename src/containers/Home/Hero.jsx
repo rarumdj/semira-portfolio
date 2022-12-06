@@ -4,7 +4,7 @@ import { ReactComponent as Highlight } from "../../assets/images/highlight.svg";
 import semira from "../../assets/images/semira.png";
 import semirasc from "../../assets/images/semira.png";
 import RightFrame from "../../assets/images/rightframe.webp";
-import "react-lazy-load-image-component/src/effects/black-and-white.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   return (
@@ -38,7 +38,8 @@ const Hero = () => {
                 <div className="absolute inset-0 m-auto w-full h-full">
                   <LazyLoadImage
                     alt={semira}
-                    effect="black-and-white"
+                    effect="blur"
+                    placeholderSrc={semira}
                     // height={image.height}
                     src={semira} // use normal <img> attributes as props
                     // width={image.width}
