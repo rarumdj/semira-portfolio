@@ -27,6 +27,6 @@ body {
 }
 
 .custom-font {
-  font-family: "Millik", serif;
+  font-family: var(--custom-family);
   line-height: 140%;
 }
