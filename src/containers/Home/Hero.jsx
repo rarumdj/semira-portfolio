@@ -2,7 +2,8 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { ReactComponent as Highlight } from "../../assets/images/highlight.svg";
 import semira from "../../assets/images/semira.png";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import semirasc from "../../assets/images/semira.png";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   return (
@@ -36,11 +37,12 @@ const Hero = () => {
                 <div className="absolute inset-0 m-auto w-full h-full">
                   <LazyLoadImage
                     alt={semira}
-                    // effect="blur"
+                    effect="opacity"
+                    placeholderSrc={semirasc}
                     // height={image.height}
                     src={semira} // use normal <img> attributes as props
                     // width={image.width}
-                    className="absolute inset-0 md:translate-x-2 -translate-y-2 md:h-full"
+                    className="absolute inset-0 md:translate-x-2 -translate-y-2 md:h-full px-10"
                   />
                 </div>
               </div>
