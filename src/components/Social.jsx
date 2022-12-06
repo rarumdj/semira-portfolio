@@ -1,6 +1,6 @@
 import React from "react";
-import SocialCard from "../../components/SocialCard";
-import { ReactComponent as Hello } from "../../assets/images/Hello.svg";
+import SocialCard from "./SocialCard";
+import { ReactComponent as Hello } from "../assets/images/Hello.svg";
 
 const Social = () => {
   return (

@@ -6,6 +6,8 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -29,9 +31,10 @@ function App() {
         <main>
           <Routes>
             <Route path="/*" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   };
