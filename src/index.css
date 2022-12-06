@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: "Millik";
-  src: url("assets/font/Millik.otf") format("otf"),
-    url("assets/font/Millik.woff") format("woff");
+  src: url("assets/font/Millik.woff") format("woff"),
+    url("assets/font/Millik.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
