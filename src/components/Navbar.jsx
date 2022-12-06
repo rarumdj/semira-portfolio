@@ -62,9 +62,9 @@ const Navbar = () => {
       className={`py-4 px-8 lg:py-4 lg:px-16 fixed top-0 left-0 right-0 z-50 flex justify-center ${stickyClass}`}>
       <nav className="flex flex-row justify-between items-center w-screen max-w-[110rem] xl:px-20 px-0">
         <div className="z-50">
-          <a href="/#home">
+          <NavLink to="/">
             <Logo className="p-1" />
-          </a>
+          </NavLink>
         </div>
         <div>
           <button
