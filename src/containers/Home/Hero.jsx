@@ -50,7 +50,7 @@ const Hero = () => {
                 <h1 className="custom-font lg:text-lg text-base mb-2">
                   Hi, I’m Semira Yesufu.
                 </h1>
-                <p className="lg:text-base md:text-xs sm:text-sm leading-relaxed lg:w-9/12 md:w-11/12 text-justify ">
+                <p className="lg:text-base md:text-xs sm:text-sm text-sm leading-relaxed lg:w-9/12 md:w-11/12 text-justify ">
                   I’m a product designer who enjoys crafting solutions
                   influenced by empathetic research, minimalistic visuals,
                   content design, and business strategy. Over the last few
