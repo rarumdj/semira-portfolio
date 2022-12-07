@@ -1,6 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { ReactComponent as Highlight } from "../../assets/images/highlight.svg";
+import { ReactComponent as Symbol } from "../../assets/images/largesymbol.svg";
 import semira from "../../assets/images/semira.png";
 import semirasc from "../../assets/images/semira.png";
 import RightFrame from "../../assets/images/rightframe.webp";
@@ -46,7 +47,10 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="text-white h-full flex flex-col justify-center pt-10 ">
+              <div className="relative text-white h-full flex flex-col justify-center pt-10 ">
+              <Symbol className="md:block hidden absolute lg:-left-44 -left-28 -top-16 lg:p-1 p-5" />{" "}
+              <Symbol className="block md:hidden absolute rotate-[120deg] right-0 -top-8 lg:p-1 p-6" />{" "}
+
                 <h1 className="custom-font lg:text-lg text-base mb-2">
                   Hi, I’m Semira Yesufu.
                 </h1>
