@@ -14,7 +14,7 @@ body {
   background-color: #1b1b1b;
   background-image: url(assets/images/head_morp.svg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
