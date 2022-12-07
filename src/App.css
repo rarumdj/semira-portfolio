@@ -12,7 +12,7 @@ body {
 
 .header-bg {
   background-color: #1b1b1b;
-  background-image: url(assets/images/header-morph.png);
+  background-image: url(assets/images/head_morp.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 
 .section-bg {
   background-color: #1b1b1b;
-  background-image: url(assets/images/work_bg.png);
+  background-image: url(assets/images/selected_work.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

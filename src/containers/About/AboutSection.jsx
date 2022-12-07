@@ -4,7 +4,7 @@ import { ReactComponent as RapidLine } from "../../assets/images/rapidLine.svg";
 const AboutSection = () => {
   return (
     <section id="home" className="header-bg ">
-      <div className="pt-20 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-[100rem]">
+      <div className="pt-20 lg:pb-28  container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-[100rem]">
         <div className="h-full relative w-full md:mt-48 mt-20 space-y-10">
           <RapidLine className="absolute -left-5 -top-16 lg:p-0 p-5" />
           <div>
