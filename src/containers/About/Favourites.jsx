@@ -14,10 +14,10 @@ const Favourites = () => {
         <div className="flex flex-col items-center justify-center w-full mb-10">
           <Star className="md:p-0 p-1" />
           <div className="lg:w-6/12 text-center my-10">
-            <h4 className="custom-font text-white md:text-2xl text-lg">
+            <h4 className="custom-font text-white md:text-[26px] text-lg">
               Few of my favorite things...
             </h4>
-            <p className="md:text-base text-sm text-white leading-relaxed">
+            <p className="md:text-[18px] text-sm text-white leading-loose">
               I enjoy exploring fine dining with loved ones. When I’m not semira
               the explorer, I cuddle up with churned ice cream and binge-watch
               comedy series (my all-time favourite is “Modern Family”). Comedy

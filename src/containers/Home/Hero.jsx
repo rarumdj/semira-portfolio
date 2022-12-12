@@ -29,13 +29,7 @@ const Hero = () => {
           <div className="mt-16 lg:absolute lg:bottom-0 lg:translate-y-2 xl:px-16 lg:px-0">
             <div className="grid md:grid-cols-2 md:items-end md:justify-start items-center justify-center w-full">
               <div className="flex w-full relative pb-[80%] md:mb-0 mb-24">
-                {/* <div className="absolute inset-0 m-auto w-full h-full">
-              <img
-                src={semira}
-                alt="img-about"
-                className="absolute inset-0 md:translate-x-2 -translate-y-2 md:h-full"
-              />
-            </div> */}
+              
                 <div className="absolute inset-0 m-auto w-full h-full">
                   <LazyLoadImage
                     alt={semira}
@@ -48,13 +42,13 @@ const Hero = () => {
               </div>
 
               <div className="relative text-white h-full flex flex-col justify-center pt-10 ">
-              <Symbol className="md:block hidden absolute lg:-left-44 -left-28 -top-16 lg:p-1 p-5" />{" "}
-              <Symbol className="block md:hidden absolute rotate-[120deg] right-0 -top-8 lg:p-1 p-6" />{" "}
+                <Symbol className="md:block hidden absolute lg:-left-44 -left-28 -top-16 lg:p-1 p-5" />
+                <Symbol className="block md:hidden absolute rotate-[120deg] right-0 -top-8 lg:p-1 p-6" />
 
-                <h1 className="custom-font lg:text-lg text-base mb-2">
+                <h1 className="custom-font lg:text-xl text-base mb-2">
                   Hi, I’m Semira Yesufu.
                 </h1>
-                <p className="lg:text-base md:text-xs sm:text-sm text-sm leading-relaxed lg:w-9/12 md:w-11/12 text-justify ">
+                <p className="lg:text-[18px] md:text-xs sm:text-sm text-sm !leading-relaxed lg:w-9/12 md:w-11/12 text-justify ">
                   I’m a product designer who enjoys crafting solutions
                   influenced by empathetic research, minimalistic visuals,
                   content design, and business strategy. Over the last few
@@ -63,7 +57,7 @@ const Hero = () => {
                   industries like Finance, Enterprise, HR - SaaS, PropTech &
                   Beauty, and e-Commerce.
                 </p>
-                <h1 className="custom-font lg:text-lg text-base my-6">
+                <h1 className="custom-font lg:text-xl text-base my-6">
                   MORE ABOUT ME
                 </h1>
               </div>

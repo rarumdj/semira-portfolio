@@ -1,18 +1,27 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Navigate, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/images/Logo.svg";
+import OutsideClickHandler from "react-outside-click-handler";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [activeSubNav, setActiveSubNav] = useState(false);
   const { pathname } = useLocation();
   const handleClick = () => {
     setClick(!click);
   };
 
+  const openSubNav = () => {
+    setActiveSubNav(!activeSubNav);
+    handleNavClick();
+  };
+
+  const navigate = useNavigate();
+
   const handleNavClick = () => {
-    if (pathname !== "/") Navigate("/");
+    // if (pathname !== "/") navigate("/");
     setClick(false);
 
     return;
@@ -57,6 +66,10 @@ const Navbar = () => {
     }
   };
 
+  const cName =
+    "cursor-pointer hover:line-through transition-all ease-in-out duration-300";
+  const cNameActive = "cursor-pointer line-through font-medium";
+
   return (
     <header
       className={`py-4 px-8 lg:py-4 lg:px-16 fixed top-0 left-0 right-0 z-50 flex justify-center ${stickyClass}`}>
@@ -78,38 +91,77 @@ const Navbar = () => {
           </button>
           <aside>
             <nav className="md:flex hidden lg:space-x-36 space-x-8">
-              <ul className="flex flex-row space-x-8 items-center py-5 text-white font-medium lg:text-base text-sm">
-                <li>
-                  <a
-                    className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
-                    href="#eligibility"
-                    onClick={handleNavClick}>
-                    Stuff I’ve done
-                  </a>
+              <ul className="flex flex-row space-x-8 items-center py-5 text-white font-medium lg:text-[18px] text-sm">
+                <li className="relative">
+                  <div
+                    className="cursor-pointer hover:line-through group transition-all ease-in-out duration-300"
+                    onClick={(e) => {
+                      openSubNav();
+                    }}>
+                    <span className="flex items-center">
+                      Stuff I’ve done{" "}
+                      <Icon
+                        icon="ic:round-keyboard-arrow-down"
+                        fontSize={30}
+                        color="fff"
+                        className={`${
+                          activeSubNav
+                            ? "-rotate-180"
+                            : "rotate-0 pointer-events-none"
+                        }  ease-in-out duration-700`}
+                      />
+                    </span>
+                  </div>
+
+                  <div
+                    className={`min-w-[160px] p-6 absolute top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-300 ${
+                      activeSubNav
+                        ? "scale-100 opacity-100"
+                        : "scale-0 opacity-0 pointer-events-none"
+                    }`}>
+                    <ul className="space-y-4  lg:text-[18px] text-sm font-light text-[#C4C4C4] ">
+                      <li className="hover:text-white transition-all ease-in-out duration-300">
+                        Nepza OPMS
+                      </li>
+                      <li className="hover:text-white transition-all ease-in-out duration-300">
+                        EaziLife
+                      </li>
+                      <li className="hover:text-white transition-all ease-in-out duration-300">
+                        Sketapp
+                      </li>
+                      <li className="hover:text-white transition-all ease-in-out duration-300">
+                        Path4Her
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <NavLink
-                    className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
+                    className={({ isActive }) =>
+                      isActive ? cNameActive : cName
+                    }
                     to="about"
                     onClick={handleNavClick}>
                     About me
                   </NavLink>
                 </li>
                 <li>
-                  <a
-                    className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
-                    href="#contact"
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? cNameActive : cName
+                    }
+                    to="/contact"
                     onClick={handleNavClick}>
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
+                  <NavLink
                     className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
-                    href="#resume"
+                    to="#resume"
                     onClick={handleNavClick}>
                     Resumé
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -121,38 +173,77 @@ const Navbar = () => {
               className={`md:hidden block bg-[#1b1b1b] absolute top-0 left-0 right-0 bottom-0 min-h-screen`}>
               <div className="flex flex-col pt-36 h-full items-center min-w-full px-8">
                 <div className="space-y-16 w-full max-w-md">
-                  <ul className="flex flex-col space-y-10 items-start text-white font-semibold ">
-                    <li>
-                      <a
-                        className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
-                        href="#eligibility"
-                        onClick={handleNavClick}>
-                        Stuff I’ve done
-                      </a>
+                  <ul className="flex text-[18px] flex-col space-y-10 items-start text-white font-semibold ">
+                    <li className="relative">
+                      <div
+                        className="cursor-pointer hover:line-through group transition-all ease-in-out duration-300"
+                        onClick={(e) => {
+                          openSubNav();
+                        }}>
+                        <span className="flex items-center">
+                          Stuff I’ve done{" "}
+                          <Icon
+                            icon="ic:round-keyboard-arrow-down"
+                            fontSize={30}
+                            color="fff"
+                            className={`${
+                              activeSubNav
+                                ? "-rotate-180"
+                                : "rotate-0 pointer-events-none"
+                            }  ease-in-out duration-700`}
+                          />
+                        </span>
+                      </div>
+
+                      <div
+                        className={`min-w-[160px] p-6 absolute top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-300 ${
+                          activeSubNav
+                            ? "scale-100 opacity-100"
+                            : "scale-0 opacity-0 pointer-events-none"
+                        }`}>
+                        <ul className="space-y-4  lg:text-[18px] text-sm font-light text-[#C4C4C4] ">
+                          <li className="hover:text-white transition-all ease-in-out duration-300">
+                            Nepza OPMS
+                          </li>
+                          <li className="hover:text-white transition-all ease-in-out duration-300">
+                            EaziLife
+                          </li>
+                          <li className="hover:text-white transition-all ease-in-out duration-300">
+                            Sketapp
+                          </li>
+                          <li className="hover:text-white transition-all ease-in-out duration-300">
+                            Path4Her
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
                       <NavLink
-                        className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
+                        className={({ isActive }) =>
+                          isActive ? cNameActive : cName
+                        }
                         to="about"
                         onClick={handleNavClick}>
                         About me
                       </NavLink>
                     </li>
                     <li>
-                      <a
-                        className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
-                        href="#contact"
+                      <NavLink
+                        className={({ isActive }) =>
+                          isActive ? cNameActive : cName
+                        }
+                        to="/contact"
                         onClick={handleNavClick}>
                         Contact
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
+                      <NavLink
                         className="cursor-pointer hover:line-through transition-all ease-in-out duration-300"
-                        href="#resume"
+                        to="#resume"
                         onClick={handleNavClick}>
                         Resumé
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
