@@ -27,7 +27,7 @@ const Hero = () => {
               Crafting{" "}
             </span>
             <span className="text-[#FEA5A5] custom-font">Seamless</span> and{" "}
-            <span className="md:text-base text-xs absolute translate-y-3 translate-x-1">
+            <span className="md:text-[28px] text-sm absolute translate-y-5 translate-x-1">
               &copy;
             </span>
             <br />
@@ -41,10 +41,8 @@ const Hero = () => {
                 <div className="absolute inset-0 m-auto w-full h-full">
                   <LazyLoadImage
                     alt={semira}
-                    effect="blur"
-                    placeholderSrc={semira}
                     src={semira} // use normal <img> attributes as props
-                    className="md:translate-y-5 md:h-full sm:px-10"
+                    className="md:-translate-y-2 md:h-full sm:px-10"
                   />
                 </div>
               </div>
@@ -109,7 +107,7 @@ const Hero = () => {
                 <h1 className="custom-font lg:text-xl text-base mb-2">
                   Hi, I’m Semira Yesufu.
                 </h1>
-                <p className="lg:text-[18px] md:text-xs sm:text-sm text-sm !leading-relaxed lg:w-9/12 md:w-11/12 text-justify ">
+                <p className="lg:text-[18px] md:text-xs sm:text-sm text-sm !leading-relaxed lg:w-9/12 md:w-11/12 text-justify font-light">
                   I’m a product designer who enjoys crafting solutions
                   influenced by empathetic research, minimalistic visuals,
                   content design, and business strategy. Over the last few

@@ -33,7 +33,7 @@ const Favourites = () => {
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               Few of my favorite things...
             </h4>
-            <p className="md:text-[18px] text-sm text-white leading-loose">
+            <p className="md:text-[18px] text-sm text-white leading-loose font-light">
               I enjoy exploring fine dining with loved ones. When I’m not semira
               the explorer, I cuddle up with churned ice cream and binge-watch
               comedy series (my all-time favourite is “Modern Family”). Comedy

@@ -17,7 +17,7 @@ const AboutSection = () => {
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               More than meets the eyes
             </h4>
-            <p className="md:text-[18px] text-sm text-white leading-loose">
+            <p className="md:text-[18px] text-sm text-white leading-loose font-light">
               I graduated top of my class with a first-class degree in Computer
               science, and while in school, I did social media management on the
               side to earn extra bucks. I would say this knowledge and skillset
@@ -35,7 +35,7 @@ const AboutSection = () => {
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               My Love for Design & Tech
             </h4>
-            <p className="md:text-[18px] text-sm text-white leading-loose">
+            <p className="md:text-[18px] text-sm text-white leading-loose font-light">
               When I was younger, I developed a yearning for technology and
               innovation. Luckily it was nurtured by my family, they signed me
               up for computer and typewriting classes and as little as 15, I
@@ -55,14 +55,14 @@ const AboutSection = () => {
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               Contributing to the idea of an “enriched society”
             </h4>
-            <p className="md:text-[18px] text-sm text-white leading-loose">
+            <p className="md:text-[18px] text-sm text-white leading-loose font-light">
               Aside from being a mouse mover, I’m deeply passionate about
               contributing to the development & growth of initiatives that
               empower, enrich and educate women, the Muslim community and
               underrepresented groups. I’m currently achieving this by wearing
               the following hats;
             </p>
-            <ul className="md:text-[18px] text-sm text-white list-disc list-inside ml-4 leading-loose">
+            <ul className="md:text-[18px] text-sm text-white list-disc list-inside ml-4 leading-loose font-light">
               <li>
                 Content Designer & Community Manager,{" "}
                 <span className="underline cursor-pointer">LeadsbyDesign</span>{" "}

@@ -14,7 +14,7 @@ const SmallWorkCard = ({ title, description }) => {
         <h2 className="text-base text-white custom-font font-medium">
           {title}
         </h2>
-        <p className="leading-relaxed text-sm text-[#C4C4C4]">{description}</p>
+        <p className="leading-relaxed text-sm text-[#C4C4C4] font-light">{description}</p>
       </div>
     </motion.div>
   );

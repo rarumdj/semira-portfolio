@@ -95,7 +95,7 @@ const Testimonial = () => {
             onSlideChange={(e) => setControlledSwiper(e.realIndex)}>
             {Testi.map((items, i) => (
               <SwiperSlide key={i}>
-                <div className="!text-[#C4C4C4] md:text-[18px] text-sm !leading-loose font-normal text-center">
+                <div className="!text-[#C4C4C4] md:text-[18px] text-sm !leading-loose font-normal text-center font-light">
                   {items.story}
                 </div>
                 <div className="w-full relative flex justify-center mt-16">

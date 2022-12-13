@@ -3,14 +3,19 @@ import "./App.css";
 // eslint-disable-next-line
 import "swiper/css/bundle";
 import { AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import React, { useCallback } from "react";
+
+import ScrollToTop from "react-scroll-to-top";
+import { Icon } from "@iconify/react";
 
 function App() {
   const location = useLocation();
+  
 
   useEffect(
     () => {
@@ -24,6 +29,7 @@ function App() {
     // []
   );
 
+
   const DefaultRoutes = () => {
     return (
       <div>
@@ -33,7 +39,15 @@ function App() {
             <Route path="/*" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
           </Routes>
+
+          <ScrollToTop
+            smooth
+            component={<Icon icon="ep:arrow-up" color="#fff" fontSize={30} />}
+            color=""
+            className="!w-14 !h-14 !bg-[#F28F8F] !rounded-full !flex !justify-center !items-center !m-auto"
+          />
         </main>
+
         <Footer />
       </div>
     );

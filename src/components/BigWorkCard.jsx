@@ -21,7 +21,7 @@ const BigWorkCard = ({
         ease: "easeInOut",
         easings: ["easeIn", "easeOut"],
       }}>
-      <div className="border border-[#676C7A80]/50 md:h-[575px] h-[400px] rounded-xl overflow-hidden w-full bg-gradient-to-r from-[#35001226] backdrop-blur-md  mb-6 flex">
+      <div className="hover:bg-[#676C7A80]/10 transition-all ease-in-out duration-500 cursor-pointer border border-[#676C7A80]/50 md:h-[575px] h-[400px] rounded-xl overflow-hidden w-full bg-gradient-to-r from-[#35001226] backdrop-blur-md  mb-6 flex">
         <LazyLoadImage
           alt={image}
           effect="blur"
@@ -31,13 +31,13 @@ const BigWorkCard = ({
         {/* <img className=" w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="content" /> */}
       </div>
       <div className="">
-        <h3 className="text-[#C4C4C499]/60 md:text-[16px] text-xs mb-3">
+        <h3 className="text-[#C4C4C499]/60 md:text-[16px] text-xs mb-3 font-light">
           {keywords}
         </h3>
         <h2 className="md:text-[18px] text:base text-white custom-font font-medium mb-2">
           {title}
         </h2>
-        <div className="md:text-[18px] text-sm text-[#C4C4C4]">
+        <div className="md:text-[18px] text-sm text-[#C4C4C4] font-light">
           {description}
         </div>
       </div>
