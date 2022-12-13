@@ -27,7 +27,7 @@ const Hero = () => {
               Crafting{" "}
             </span>
             <span className="text-[#FEA5A5] custom-font">Seamless</span> and{" "}
-            <span className="md:text-[28px] text-sm absolute translate-y-5 translate-x-1">
+            <span className="md:text-[28px] text-sm absolute md:translate-y-5 translate-y-2 translate-x-1">
               &copy;
             </span>
             <br />
