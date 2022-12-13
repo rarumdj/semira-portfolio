@@ -1,9 +1,8 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/images/Logo.svg";
-import OutsideClickHandler from "react-outside-click-handler";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -16,8 +15,6 @@ const Navbar = () => {
   const openSubNav = () => {
     setActiveSubNav(!activeSubNav);
   };
-
-  const navigate = useNavigate();
 
   const handleNavClick = () => {
     // if (pathname !== "/") navigate("/");

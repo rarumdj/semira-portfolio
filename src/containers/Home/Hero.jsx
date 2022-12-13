@@ -1,22 +1,13 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { ReactComponent as Highlight } from "../../assets/images/highlight.svg";
-import { ReactComponent as Symbol } from "../../assets/images/largesymbol.svg";
-import semira from "../../assets/images/semira.png";
-import semirasc from "../../assets/images/semira.png";
-import RightFrame from "../../assets/images/rightframe.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { motion } from "framer-motion";
+import { ReactComponent as Highlight } from "../../assets/images/highlight.svg";
+import semira from "../../assets/images/semira.png";
 
 const Hero = () => {
   const transition = { duration: 4, yoyo: Infinity, ease: "easeInOut" };
-  const outlineVariants = {
-    default: {
-      pathLength: [0, 1],
 
-      transition: { duration: 4, yoyo: Infinity, ease: "easeInOut" },
-    },
-  };
   return (
     <section id="home" className="header-bg ">
       <div className="pt-20 2xl:h-[1068px] lg:h-screen  container mx-auto flex flex-col items-center w-full px-8 ">

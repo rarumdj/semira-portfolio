@@ -54,7 +54,6 @@ const Testi = [
 
 const Testimonial = () => {
   const [controlledSwiper, setControlledSwiper] = useState(0);
-  let changeText = Testi[controlledSwiper];
   SwiperCore.use([Autoplay]);
   const params = {
     loop: true,

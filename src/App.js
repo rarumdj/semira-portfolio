@@ -1,17 +1,16 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 // eslint-disable-next-line
-import "swiper/css/bundle";
 import { AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import React, { useEffect } from "react";
+import "swiper/css/bundle";
 import Footer from "./components/Footer";
-import React, { useCallback } from "react";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
-import ScrollToTop from "react-scroll-to-top";
 import { Icon } from "@iconify/react";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const location = useLocation();
