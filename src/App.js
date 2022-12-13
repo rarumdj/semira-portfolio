@@ -42,9 +42,9 @@ function App() {
 
           <ScrollToTop
             smooth
-            component={<Icon icon="ep:arrow-up" color="#fff" fontSize={30} />}
+            component={<Icon icon="ep:arrow-up" color="#fff" className="text-[20px]" />}
             color=""
-            className="!w-14 !h-14 !bg-[#F28F8F] !rounded-full !flex !justify-center !items-center !m-auto"
+            className="!md:w-14 !md:h-14 !w-10 !h-10 !bg-[#F28F8F] !rounded-full !flex !justify-center !items-center !m-auto"
           />
         </main>
 
