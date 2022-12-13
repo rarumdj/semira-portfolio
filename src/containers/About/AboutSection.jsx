@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { ReactComponent as RapidLine } from "../../assets/images/rapidLine.svg";
 
@@ -7,7 +8,12 @@ const AboutSection = () => {
       <div className="pt-20 lg:pb-28 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-[100rem]">
         <div className="h-full relative md:pr-32 pr-0 w-full md:mt-48 mt-20 space-y-10">
           <RapidLine className="absolute -left-5 -top-16 lg:p-0 p-5" />
-          <div>
+          <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          easings: ["easeIn", "easeOut"],
+        }}>
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               More than meets the eyes
             </h4>
@@ -19,8 +25,13 @@ const AboutSection = () => {
               seamlessness and developer's feasibility when creating products
               and experiences.
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          easings: ["easeIn", "easeOut"],
+        }}>
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               My Love for Design & Tech
             </h4>
@@ -34,8 +45,13 @@ const AboutSection = () => {
               essentially shaped my decision to work in a tech-driven and
               problem-solving space.
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          easings: ["easeIn", "easeOut"],
+        }}>
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               Contributing to the idea of an “enriched society”
             </h4>
@@ -60,7 +76,7 @@ const AboutSection = () => {
                 <span className="underline cursor-pointer">Path4Her</span>
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

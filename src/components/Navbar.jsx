@@ -15,7 +15,6 @@ const Navbar = () => {
 
   const openSubNav = () => {
     setActiveSubNav(!activeSubNav);
-    handleNavClick();
   };
 
   const navigate = useNavigate();
@@ -196,10 +195,10 @@ const Navbar = () => {
                       </div>
 
                       <div
-                        className={`min-w-[160px] p-6 absolute top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-300 ${
+                        className={`min-w-[160px] p-6 top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-300 ${
                           activeSubNav
                             ? "scale-100 opacity-100"
-                            : "scale-0 opacity-0 pointer-events-none"
+                            : "scale-0 opacity-0 pointer-events-none absolute"
                         }`}>
                         <ul className="space-y-4  lg:text-[18px] text-sm font-light text-[#C4C4C4] ">
                           <li className="hover:text-white transition-all ease-in-out duration-300">

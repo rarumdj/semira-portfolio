@@ -30,3 +30,108 @@ body {
   font-family: var(--custom-family);
   line-height: 140%;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper-slide-active {
+  display: block;
+  width: 100% !important;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* border-radius: 8px; */
+  overflow: hidden;
+}
+
+.swiper-slide-next {
+  display: block;
+  width: 100% !important;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  position: unset !important;
+  display: block;
+  gap: 2;
+  align-items: center;
+  justify-content: center;
+  display: flex
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: #676c7a !important;
+  opacity: 50%;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffff !important;
+  opacity: 1;
+  width: 33px !important;
+  height: 8px !important;
+  border-radius: 27px;
+}
+
+/* swiper-slide  swiper-slide-duplicate-prev */
+
+@media screen and (max-width: 767px) {
+  .swiper-slide-active {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .swiper-slide-next {
+    display: block;
+    width: 100% !important;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+ 
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 9px !important;
+  height: 9px !important;
+  background: #676c7a !important;
+  opacity: 50%;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffff !important;
+  opacity: 1;
+  width: 33px !important;
+  height: 5px !important;
+  border-radius: 27px;
+}
+
+  .resize {
+    width: calc(100vw / 2 - -40px) !important;
+    height: calc((100vw / 2 - 40px) * 1.34) !important;
+    border-radius: 16px;
+  }
+}

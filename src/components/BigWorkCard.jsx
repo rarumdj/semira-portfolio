@@ -1,14 +1,33 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const BigWorkCard = ({ title, keywords, description, xPostion,duration }) => {
+const BigWorkCard = ({
+  title,
+  keywords,
+  description,
+  xPostion,
+  duration,
+  image,
+}) => {
   // x: [-100, -50, -0]
   return (
     <motion.div
       className="rounded-lg"
-      whileInView={{ x:xPostion,y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: duration, ease: "easeIn" }}>
-      <div className="border border-[#676C7A80]/50 md:h-[575px] h-[400px] rounded-xl w-full bg-gradient-to-r from-[#35001226] backdrop-blur-md  mb-6 flex">
+      whileInView={{ x: xPostion, y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{
+        duration: duration,
+        ease: "easeInOut",
+        easings: ["easeIn", "easeOut"],
+      }}>
+      <div className="border border-[#676C7A80]/50 md:h-[575px] h-[400px] rounded-xl overflow-hidden w-full bg-gradient-to-r from-[#35001226] backdrop-blur-md  mb-6 flex">
+        <LazyLoadImage
+          alt={image}
+          effect="blur"
+          src={image} // use normal <img> attributes as props
+          className="w-full object-cover object-center"
+        />
         {/* <img className=" w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="content" /> */}
       </div>
       <div className="">

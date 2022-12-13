@@ -4,8 +4,12 @@ const SmallWorkCard = ({ title, description }) => {
   return (
     <motion.div
       className="border-t border-[#676C7A80]/50 py-8"
-      whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}>
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{
+        duration: 0.7,
+        ease: "easeInOut",
+        easings: ["easeIn", "easeOut"],
+      }}>
       <div className="space-y-2">
         <h2 className="text-base text-white custom-font font-medium">
           {title}
