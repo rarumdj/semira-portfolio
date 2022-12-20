@@ -169,7 +169,7 @@ const Navbar = () => {
               className={`md:hidden block bg-[#1b1b1b] absolute top-0 left-0 right-0 bottom-0 min-h-screen`}>
               <div className="flex flex-col pt-36 h-full items-center min-w-full px-8">
                 <div className="space-y-16 w-full max-w-md">
-                  <ul className="flex text-[18px] flex-col space-y-10 items-start text-white font-semibold ">
+                  <ul className="flex text-[18px] flex-col space-y-10 items-start text-[#c4c4c4] font-semibold ">
                     <li className="relative">
                       <div
                         className="cursor-pointer hover:line-through group transition-all ease-in-out duration-300"
