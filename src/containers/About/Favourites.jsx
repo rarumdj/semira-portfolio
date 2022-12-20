@@ -1,12 +1,13 @@
 import React from "react";
 import { ReactComponent as Star } from "../../assets/images/star.svg";
 import { ReactComponent as Zigzag } from "../../assets/images/zigzag.svg";
-import CenterImg from "../../assets/images/centerframe.webp";
-import LeftFrame from "../../assets/images/leftframe.webp";
-import RightFrame from "../../assets/images/rightframe.webp";
+// import CenterImg from "../../assets/images/centerframe.webp";
+// import LeftFrame from "../../assets/images/leftframe.webp";
+// import RightFrame from "../../assets/images/rightframe.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
+import { CenterFrame, LeftFrame, RightFrame } from "../../assets/images";
 
 const Favourites = () => {
   return (
@@ -33,7 +34,7 @@ const Favourites = () => {
             <h4 className="custom-font text-white md:text-[26px] text-lg">
               Few of my favorite things...
             </h4>
-            <p className="md:text-[18px] text-sm text-white leading-loose font-light">
+            <p className="md:text-[18px] text-sm text-[#c4c4c4] leading-loose font-light">
               I enjoy exploring fine dining with loved ones. When I’m not semira
               the explorer, I cuddle up with churned ice cream and binge-watch
               comedy series (my all-time favourite is “Modern Family”). Comedy
@@ -69,9 +70,9 @@ const Favourites = () => {
                   easings: ["easeIn", "easeOut"],
                 }}>
                 <LazyLoadImage
-                  alt={CenterImg}
+                  alt={CenterFrame}
                   effect="blur"
-                  src={CenterImg} // use normal <img> attributes as props
+                  src={CenterFrame} // use normal <img> attributes as props
                   className=" inset-0 translate-x-2 -translate-y-2 w-auto h-full"
                 />
               </motion.div>
