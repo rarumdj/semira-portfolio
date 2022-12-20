@@ -31,7 +31,7 @@ function App() {
 
   const DefaultRoutes = () => {
     return (
-      <div>
+      <div className="relative">
         <Navbar />
         <main>
           <Routes>

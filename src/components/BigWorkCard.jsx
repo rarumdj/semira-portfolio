@@ -15,7 +15,7 @@ const BigWorkCard = ({
   return (
     <motion.div
       className="rounded-lg"
-      whileInView={{ x: xPostion, y: [100, 50, 0], opacity: [0, 0, 1] }}
+      whileInView={{ x: xPostion, y: [100, 0], opacity: [0, 1] }}
       transition={{
         duration: duration,
         ease: "easeInOut",

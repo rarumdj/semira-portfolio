@@ -68,7 +68,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`py-4 px-8 lg:py-4 lg:px-16 fixed top-0 left-0 right-0 z-50 flex justify-center ${stickyClass}`}>
+      className={`py-4 px-8 lg:py-4 lg:px-16 absolute top-0 left-0 right-0 z-50 flex justify-center`}>
       <nav className="flex flex-row justify-between items-center w-screen max-w-[110rem] xl:px-20 px-0">
         <div className="z-50">
           <NavLink to="/">
@@ -87,7 +87,7 @@ const Navbar = () => {
           </button>
           <aside>
             <nav className="md:flex hidden lg:space-x-36 space-x-8">
-              <ul className="flex flex-row space-x-8 items-center py-5 text-white font-medium lg:text-[18px] text-sm">
+              <ul className="flex flex-row space-x-8 items-center py-5 text-[#C4C4C4] font-light lg:text-[18px] text-sm">
                 <li className="relative">
                   <div
                     className="cursor-pointer hover:line-through group transition-all ease-in-out duration-300"
@@ -110,10 +110,10 @@ const Navbar = () => {
                   </div>
 
                   <div
-                    className={`min-w-[160px] p-6 absolute top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-300 ${
+                    className={`min-w-[160px] p-6 absolute top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-500 ${
                       activeSubNav
-                        ? "scale-100 opacity-100"
-                        : "scale-0 opacity-0 pointer-events-none"
+                        ? "opacity-100"
+                        : "opacity-0 pointer-events-none"
                     }`}>
                     <ul className="space-y-4  lg:text-[18px] text-sm font-light text-[#C4C4C4] ">
                       <li className="hover:text-white transition-all ease-in-out duration-300">
@@ -192,10 +192,10 @@ const Navbar = () => {
                       </div>
 
                       <div
-                        className={`min-w-[160px] p-6 top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-300 ${
+                        className={`min-w-[160px] p-6 top-0 bg-[#1B1B1B] rounded-lg mt-10 transition-all duration-500 ${
                           activeSubNav
-                            ? "scale-100 opacity-100"
-                            : "scale-0 opacity-0 pointer-events-none absolute"
+                            ? "opacity-100"
+                            : "opacity-0 pointer-events-none absolute"
                         }`}>
                         <ul className="space-y-4  lg:text-[18px] text-sm font-light text-[#C4C4C4] ">
                           <li className="hover:text-white transition-all ease-in-out duration-300">

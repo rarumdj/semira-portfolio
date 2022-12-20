@@ -4,9 +4,9 @@ const SmallWorkCard = ({ title, description }) => {
   return (
     <motion.div
       className="border-t border-[#676C7A80]/50 py-8"
-      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      whileInView={{ y: [100, 0], opacity: [0, 1] }}
       transition={{
-        duration: 0.7,
+        duration: 1.2,
         ease: "easeInOut",
         easings: ["easeIn", "easeOut"],
       }}>
