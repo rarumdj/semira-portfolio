@@ -15,12 +15,13 @@ const BigWorkCard = ({
   return (
     <motion.div
       className="rounded-lg"
-      whileInView={{ x: xPostion, y: [100, 0], opacity: [0, 1] }}
-      transition={{
-        duration: duration,
-        ease: "easeInOut",
-        easings: ["easeIn", "easeOut"],
-      }}>
+      // whileInView={{ x: xPostion, y: [100, 0], opacity: [0, 1] }}
+      // transition={{
+      //   duration: duration,
+      //   ease: "easeInOut",
+      //   easings: ["easeIn", "easeOut"],
+      // }}
+      >
       <div className="hover:bg-[#676C7A80]/10 transition-all ease-in-out duration-500 cursor-pointer border border-[#676C7A80]/50 md:h-[575px] h-[400px] rounded-xl overflow-hidden w-full bg-gradient-to-r from-[#35001226] backdrop-blur-md  mb-6 flex">
         <LazyLoadImage
           alt={image}
