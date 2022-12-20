@@ -99,7 +99,7 @@ const Navbar = () => {
                       <Icon
                         icon="ic:round-keyboard-arrow-down"
                         fontSize={30}
-                        color="fff"
+                        color="#c4c4c4"
                         className={`${
                           activeSubNav
                             ? "-rotate-180"
@@ -181,7 +181,7 @@ const Navbar = () => {
                           <Icon
                             icon="ic:round-keyboard-arrow-down"
                             fontSize={30}
-                            color="fff"
+                            color="#c4c4c4"
                             className={`${
                               activeSubNav
                                 ? "-rotate-180"
