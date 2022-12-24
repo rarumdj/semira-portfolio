@@ -31,7 +31,7 @@ const Testi = [
   {
     name: "Olorunfemi John",
     org: `Product design lead, iRecharge Tech - innovation`,
-    story: `Semira Yesufu possesses a solid knowledge of UX design thinking processes. She is an Empathic person who always puts the user front and center in everything she does. With very good communication and listening skill. Semira is an excellent problem solver and an amazing teammate. 
+    story: `Semira Yesufu possesses a solid knowledge of UX design thinking processes. She is an empathic person who always puts the user front and center in everything she does. With very good communication and listening skill. Semira is an excellent problem solver and an amazing teammate. 
     I have had the privilege to work with Semira as a team and I must say, she is an incredible asset to any organization.`,
   },
   {
