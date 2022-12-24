@@ -18,6 +18,12 @@ import "swiper/css/pagination";
 
 const Testi = [
   {
+    name: "Chief Tobenna Nwokike",
+    org: `Head of Technology, IST & iRecharge Tech innovation`,
+    story: `Semira has been such a joy to work with. She has been responsible for a lot of the growth that we have experienced on the design team at Recharge. She possesses the innate ability to improve processes and also ensures that she follows through on tasks to see that they are executed in an excellent manner. Her radiant personality and ability to interact seamlessly with her colleagues is worth emulating. I would hire her ten times over if I had the chance.
+    `,
+  },
+  {
     name: "Mrs Mercy Akachukwu Fred - Ekhose",
     org: `Head of Operation, Infostrategy Technology & iRecharge Tech innovation`,
     story: `Semira is talented in UX and UI designs and more important with a right attitude for the job. Her Professionalism and ethic to work is very commendable.
