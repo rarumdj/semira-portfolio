@@ -23,17 +23,36 @@ const Social = () => {
           </span>
         </div>
         <div className="w-full grid md:grid-cols-3 lg:gap-12 gap-6">
-          <SocialCard social="Instagram" title="My Digital Diary" />
-          <SocialCard social="Medium" title="My Digital Diary" />
-          <SocialCard social="Linkedin" title="Work experiences" />
-          <SocialCard social="Twitter" title="Random thoughts" />
+          LinkedIn: Twitter: Instagram: Medium
+          <SocialCard
+            social="Instagram"
+            title="My Digital Diary"
+            link="https://www.instagram.com/semira.yesufu"
+          />
+          <SocialCard
+            social="Medium"
+            title="My Digital Diary"
+            link="www.medium.com/semirayesufu"
+          />
+          <SocialCard
+            social="Linkedin"
+            title="Work experiences"
+            link="https://www.linkedin.com/in/semirayesufu"
+          />
+          <SocialCard
+            social="Twitter"
+            title="Random thoughts"
+            link="https://www.twitter.com/wokehijabi"
+          />
           <SocialCard
             social="Dribbble"
             title="Visual  and social media designs"
+            link="www.dribbble.com/ux_semira"
           />
           <SocialCard
             social="Email"
             title="Mail for speaking and design services"
+            link="mailto:ysemiraefe@gmail.com"
           />
         </div>
       </motion.div>
