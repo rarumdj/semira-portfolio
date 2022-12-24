@@ -23,7 +23,6 @@ const Social = () => {
           </span>
         </div>
         <div className="w-full grid md:grid-cols-3 lg:gap-12 gap-6">
-          LinkedIn: Twitter: Instagram: Medium
           <SocialCard
             social="Instagram"
             title="My Digital Diary"
