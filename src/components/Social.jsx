@@ -31,7 +31,7 @@ const Social = () => {
           <SocialCard
             social="Medium"
             title="My Digital Diary"
-            link="www.medium.com/semirayesufu"
+            link="https://www.medium.com/semirayesufu"
           />
           <SocialCard
             social="Linkedin"
@@ -46,7 +46,7 @@ const Social = () => {
           <SocialCard
             social="Dribbble"
             title="Visual  and social media designs"
-            link="www.dribbble.com/ux_semira"
+            link="https://www.dribbble.com/ux_semira"
           />
           <SocialCard
             social="Email"
