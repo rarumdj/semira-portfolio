@@ -18,37 +18,22 @@ import "swiper/css/pagination";
 
 const Testi = [
   {
-    name: "Chief Tobenna Nwokike",
-    org: `Head of Technology, iRecharge tech - innovation`,
-    story: ` Semira has been such a joy to work with. She has been responsible
-    for a lot of the growth that we have experienced on the design team
-    at iRecharge. She possesses the innate ability to improve processes
-    and also ensures that she follows through on tasks to see that they
-    are executed in an excellent manner. Her radiant personality and
-    ability to interact seamlessly with her colleagues is worth
-    emulating. I would hire her ten times over if I had the chance.`,
+    name: "Mrs Mercy Akachukwu Fred - Ekhose",
+    org: `Head of Operation, Infostrategy Technology & iRecharge Tech innovation`,
+    story: `Semira is talented in UX and UI designs and more important with a right attitude for the job. Her Professionalism and ethic to work is very commendable.
+    With Semira you can trust the final deliverables of her work.
+    `,
   },
   {
-    name: "Shola Tobenna",
-    org: `Head of Technology, iMoon tech - Software`,
-    story: ` Semira has been such a joy to work with. She has been responsible
-    for a lot of the growth that we have experienced on the design team
-    at iRecharge. She possesses the innate ability to improve processes
-    and also ensures that she follows through on tasks to see that they
-    are executed in an excellent manner. Her radiant personality and
-    ability to interact seamlessly with her colleagues is worth
-    emulating. I would hire her ten times over if I had the chance.`,
+    name: "Olorunfemi John",
+    org: `Product design lead, iRecharge Tech - innovation`,
+    story: `Semira Yesufu possesses a solid knowledge of UX design thinking processes. She is an Empathic person who always puts the user front and center in everything she does. With very good communication and listening skill. Semira is an excellent problem solver and an amazing teammate. 
+    I have had the privilege to work with Semira as a team and I must say, she is an incredible asset to any organization.`,
   },
   {
-    name: "Chief Stan Eze",
-    org: `Head of Technology, iSpace tech - Technology`,
-    story: ` Semira has been such a joy to work with. She has been responsible
-    for a lot of the growth that we have experienced on the design team
-    at iRecharge. She possesses the innate ability to improve processes
-    and also ensures that she follows through on tasks to see that they
-    are executed in an excellent manner. Her radiant personality and
-    ability to interact seamlessly with her colleagues is worth
-    emulating. I would hire her ten times over if I had the chance.`,
+    name: "Teslim Alabi",
+    org: `Product Design Lead @Netflix, Founder @Leadsbydesign`,
+    story: `Semira is one of the most determined and driven designers I’ve had the pleasure of working with. She is smart, highly skilled and incredibly humble. She will be a great addition to any team.`,
   },
 ];
 
