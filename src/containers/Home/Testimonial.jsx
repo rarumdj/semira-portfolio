@@ -20,7 +20,7 @@ const Testi = [
   {
     name: "Chief Tobenna Nwokike",
     org: `Head of Technology, IST & iRecharge Tech innovation`,
-    story: `Semira has been such a joy to work with. She has been responsible for a lot of the growth that we have experienced on the design team at Recharge. She possesses the innate ability to improve processes and also ensures that she follows through on tasks to see that they are executed in an excellent manner. Her radiant personality and ability to interact seamlessly with her colleagues is worth emulating. I would hire her ten times over if I had the chance.
+    story: `Semira has been such a joy to work with. She has been responsible for a lot of the growth that we have experienced on the design team at iRecharge. She possesses the innate ability to improve processes and also ensures that she follows through on tasks to see that they are executed in an excellent manner. Her radiant personality and ability to interact seamlessly with her colleagues is worth emulating. I would hire her ten times over if I had the chance.
     `,
   },
   {
