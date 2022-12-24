@@ -24,11 +24,9 @@ const Testi = [
     `,
   },
   {
-    name: "Mrs Mercy Akachukwu Fred - Ekhose",
-    org: `Head of Operation, Infostrategy Technology & iRecharge Tech innovation`,
-    story: `Semira is talented in UX and UI designs and more important with a right attitude for the job. Her Professionalism and ethic to work is very commendable.
-    With Semira you can trust the final deliverables of her work.
-    `,
+    name: "Teslim Alabi",
+    org: `Product Design Lead @Netflix, Founder @Leadsbydesign`,
+    story: `Semira is one of the most determined and driven designers I’ve had the pleasure of working with. She is smart, highly skilled and incredibly humble. She will be a great addition to any team.`,
   },
   {
     name: "Olorunfemi John",
@@ -37,9 +35,11 @@ const Testi = [
     I have had the privilege to work with Semira as a team and I must say, she is an incredible asset to any organization.`,
   },
   {
-    name: "Teslim Alabi",
-    org: `Product Design Lead @Netflix, Founder @Leadsbydesign`,
-    story: `Semira is one of the most determined and driven designers I’ve had the pleasure of working with. She is smart, highly skilled and incredibly humble. She will be a great addition to any team.`,
+    name: "Mrs Mercy Akachukwu Fred - Ekhose",
+    org: `Head of Operation, Infostrategy Technology & iRecharge Tech innovation`,
+    story: `Semira is talented in UX and UI designs and more important with a right attitude for the job. Her Professionalism and ethic to work is very commendable.
+    With Semira you can trust the final deliverables of her work.
+    `,
   },
 ];
 
