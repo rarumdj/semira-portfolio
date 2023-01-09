@@ -1,7 +1,14 @@
 import React from "react";
 import BigWorkCard from "../../components/BigWorkCard";
 import SmallWorkCard from "../../components/SmallWorkCard";
-import { easyLife, banajar, job, nepza, skept, care } from "../../assets/images";
+import {
+  easyLife,
+  banajar,
+  job,
+  nepza,
+  skept,
+  care,
+} from "../../assets/images";
 
 const WorkList = [
   {
@@ -17,11 +24,10 @@ const WorkList = [
     keywords: "Enterprise Design / Web application",
     title: "NEPZA - OPMS",
     description: " Fostering a seamless tariff operations with a redesign",
-    postion: [100,  0],
+    postion: [100, 0],
     duration: 1.5,
     image: nepza,
   },
-  
 
   {
     keywords: "User experience design / IOS",
@@ -56,7 +62,10 @@ const Works = () => {
     <div className="md:py-24 py-20 flex justify-center section-bg">
       <div className="flex flex-col mx-auto px-6 lg:px-40 item justify-center w-screen max-w-[100rem]">
         <div className="text-base text-[#C4C4C4] flex md:mb-16 mb-10">
-          SELECTED-WORKS <span className="text-xs ml-2 mb-4 text-white">5</span>
+          SELECTED-WORKS{" "}
+          <span className="text-xs ml-2 mb-4 text-white">
+            {WorkList.length}
+          </span>
         </div>
         <div className="md:grid md:grid-cols-2 lg:gap-28 gap-6 hidden">
           {WorkList.map((item, index) => (
