@@ -117,16 +117,16 @@ const Navbar = () => {
                     }`}>
                     <ul className="space-y-3 lg:text-[18px] text-sm font-light text-[#C4C4C4] cursor-pointer ">
                       <li className="hover:text-white transition-all ease-in-out duration-300">
-                        Nepza OPMS
+                        CareFair
                       </li>
                       <li className="hover:text-white transition-all ease-in-out duration-300">
-                        EaziLife
+                        Nepza OPMS
                       </li>
                       <li className="hover:text-white transition-all ease-in-out duration-300">
                         Sketapp
                       </li>
                       <li className="hover:text-white transition-all ease-in-out duration-300">
-                        Path4Her
+                        Jobified
                       </li>
                     </ul>
                   </div>
@@ -197,18 +197,18 @@ const Navbar = () => {
                             ? "opacity-100"
                             : "opacity-0 pointer-events-none absolute"
                         }`}>
-                        <ul className="space-y-3  lg:text-[18px] text-sm font-light cursor-pointer text-[#C4C4C4] ">
+                        <ul className="space-y-3 lg:text-[18px] text-sm font-light text-[#C4C4C4] cursor-pointer ">
                           <li className="hover:text-white transition-all ease-in-out duration-300">
-                            Nepza OPMS
+                            CareFair
                           </li>
                           <li className="hover:text-white transition-all ease-in-out duration-300">
-                            EaziLife
+                            Nepza OPMS
                           </li>
                           <li className="hover:text-white transition-all ease-in-out duration-300">
                             Sketapp
                           </li>
                           <li className="hover:text-white transition-all ease-in-out duration-300">
-                            Path4Her
+                            Jobified
                           </li>
                         </ul>
                       </div>

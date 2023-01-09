@@ -1,25 +1,27 @@
 import React from "react";
 import BigWorkCard from "../../components/BigWorkCard";
 import SmallWorkCard from "../../components/SmallWorkCard";
-import { easyLife, banajar, job, nepza, skept } from "../../assets/images";
+import { easyLife, banajar, job, nepza, skept, care } from "../../assets/images";
 
 const WorkList = [
+  {
+    keywords: "User experience design / Mobile/ Web application",
+    title: "CareFair",
+    description: "Overhauling the experience of seeking reliable family care",
+    postion: [-100, -0],
+    duration: 2,
+    image: care,
+  },
+
   {
     keywords: "Enterprise Design / Web application",
     title: "NEPZA - OPMS",
     description: " Fostering a seamless tariff operations with a redesign",
-    postion: [-100,  -0],
+    postion: [100,  0],
     duration: 1.5,
     image: nepza,
   },
-  {
-    keywords: "UI & Content design / IOS / Landing Page",
-    title: "ÉaziLife",
-    description: "Automating food scheduling for working professionals",
-    postion: [100, 0],
-    duration: 2,
-    image: easyLife,
-  },
+  
 
   {
     keywords: "User experience design / IOS",
@@ -30,20 +32,20 @@ const WorkList = [
     image: skept,
   },
 
-  {
-    keywords: "Product  Management / Web application",
-    title: "barnaamaj",
-    description: "Building the future of Hajj and Umrah for Muslims globally",
-    postion: [100, 0],
-    duration: 2,
-    image: banajar,
-  },
+  // {
+  //   keywords: "Product  Management / Web application",
+  //   title: "barnaamaj",
+  //   description: "Building the future of Hajj and Umrah for Muslims globally",
+  //   postion: [100, 0],
+  //   duration: 2,
+  //   image: banajar,
+  // },
 
   {
     keywords: "Product design & Management / Web application / Landing page",
     title: "Jobified",
     description: "Creating a safe haven for hiring talents in Africa",
-    postion: [-100, -0],
+    postion: [100, 0],
     duration: 1.5,
     image: job,
   },
