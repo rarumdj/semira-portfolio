@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="header-bg ">
-      <div className="pt-20 2xl:h-[1068px] lg:h-screen container mx-auto flex flex-col items-center w-full px-8 ">
+      <div className="pt-20 2xl:h-[1068px] xl:h-[980px] lg:h-screen  container mx-auto flex flex-col items-center w-full px-8 ">
         <div className="flex flex-col items-center h-full relative w-full">
           <h1 className="text-white text-center lg:text-6xl md:text-5xl sm:text-4xl text-2xl md:mt-44 mt-16 custom-font relative">
             <span className="relative custom-font">
