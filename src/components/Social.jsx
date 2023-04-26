@@ -15,8 +15,8 @@ const Social = () => {
           easings: ["easeIn", "easeOut"],
         }}>
         <div className="flex items-center w-full mb-10">
-          <h1 className="custom-font md:text-[24px] md:w-fit w-8/12 md:mr-4 text-white">
-            SAY HI TO ME AT MY LITTLE CORNERS ONLINE{" "}
+          <h1 className="custom-font md:text-[24px] md:w-fit w-8/12 md:mr-4 font-extrabold text-white">
+          Say Hi on my little online corners
           </h1>
           <span>
             <Hello className="md:p-0 p-1" />

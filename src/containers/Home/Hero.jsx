@@ -12,15 +12,15 @@ const Hero = () => {
     <section id="home" className="header-bg ">
       <div className="pt-20 2xl:h-[1068px] xl:h-[980px] lg:h-screen  container mx-auto flex flex-col items-center w-full px-8 ">
         <div className="flex flex-col items-center h-full relative w-full">
-          <h1 className="text-white text-center lg:text-6xl md:text-5xl sm:text-4xl text-2xl md:mt-44 mt-16 custom-font relative">
+          <h1 className="text-white text-center lg:text-6xl md:text-5xl sm:text-4xl text-2xl md:mt-44 mt-16 custom-font font-extrabold relative">
             <span className="relative custom-font">
               <Highlight className="absolute md:-left-12 md:-top-12  -left-10 -top-10 lg:p-0 p-4" />{" "}
               Crafting{" "}
             </span>
             <span className="text-[#FEA5A5] custom-font">Seamless</span> and{" "}
-            <span className="md:text-[28px] text-sm absolute md:translate-y-5 translate-y-0 translate-x-1">
+            {/* <span className="md:text-[28px] text-sm absolute md:translate-y-5 translate-y-0 translate-x-1">
               &copy;
-            </span>
+            </span> */}
             <br />
             <span className="text-[#FEA5A5] custom-font">Memorable</span> User
             Experiences...
@@ -95,7 +95,7 @@ const Hero = () => {
                 </motion.svg>
                 {/* <Symbol className="block md:hidden absolute rotate-[120deg] right-0 -top-8 lg:p-1 p-6" /> */}
 
-                <h1 className="custom-font lg:text-xl text-base mb-2">
+                <h1 className="custom-font lg:text-xl text-base mb-2 font-extrabold">
                   Hi, I’m Semira Yesufu.
                 </h1>
                 <p className="lg:text-[18px] md:text-xs sm:text-sm text-sm !leading-relaxed lg:w-9/12 md:w-11/12 text-justify font-light">
@@ -107,8 +107,8 @@ const Hero = () => {
                   industries like Finance, Enterprise, HR - SaaS, PropTech &
                   Beauty, and e-Commerce.
                 </p>
-                <h1 className="custom-font lg:text-xl text-base my-6">
-                  MORE ABOUT ME
+                <h1 className="custom-font lg:text-xl text-base mt-8 mb-6 font-extrabold">
+                  More About Me
                 </h1>
               </div>
             </div>

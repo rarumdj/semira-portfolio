@@ -126,7 +126,14 @@ const Navbar = () => {
                         Sketapp
                       </li>
                       <li className="hover:text-white transition-all ease-in-out duration-300">
-                        Jobified
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? cNameActive : cName
+                          }
+                          to="jobified"
+                          onClick={handleNavClick}>
+                          Jobified
+                        </NavLink>
                       </li>
                     </ul>
                   </div>

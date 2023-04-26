@@ -76,8 +76,8 @@ const Testimonial = () => {
             ease: "easeInOut",
             easings: ["easeIn", "easeOut"],
           }}>
-          <h1 className="custom-font md:text-4xl text-xl text-white mb-10">
-            WHAT PEOPLE ARE SAYING
+          <h1 className="custom-font md:text-4xl text-xl text-white mb-10 font-extrabold">
+          What people are saying
           </h1>
           <Swiper
             {...params}
@@ -85,12 +85,12 @@ const Testimonial = () => {
             onSlideChange={(e) => setControlledSwiper(e.realIndex)}>
             {Testi.map((items, i) => (
               <SwiperSlide key={i}>
-                <div className="!text-[#C4C4C4] md:text-[18px] text-sm !leading-loose font-normal text-center font-light">
+                <div className="!text-[#C4C4C4] md:text-[18px] text-sm !leading-loose text-center font-light">
                   {items.story}
                 </div>
                 <div className="w-full relative flex justify-center mt-16">
                   <div className="text-center text-white flex flex-col items-center">
-                    <h3 className="custom-font mb-2 md:text-[20px] text-sm">
+                    <h3 className="custom-font mb-2 md:text-[20px] text-sm font-extrabold">
                       {items.name}
                     </h3>
                     <p className="mb-5 md:text-[18px] text-xs md:w-full w-8/12">

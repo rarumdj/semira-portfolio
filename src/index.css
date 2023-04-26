@@ -4,14 +4,101 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-@font-face {
+/* @font-face {
   font-family: "Millik";
   src: url("assets/font/Millik.woff") format("woff"),
     url("assets/font/Millik.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Ultralight.eot");
+  src: local("Neue Machina Ultralight"), local("NeueMachina-Ultralight"),
+    url("assets/font/NeueMachina-Ultralight.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/font/NeueMachina-Ultralight.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Ultralight.woff") format("woff"),
+    url("assets/font/NeueMachina-Ultralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Light.eot");
+  src: local("Neue Machina Light"), local("NeueMachina-Light"),
+    url("assets/font/NeueMachina-Light.eot?#iefix") format("embedded-opentype"),
+    url("assets/font/NeueMachina-Light.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Light.woff") format("woff"),
+    url("assets/font/NeueMachina-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Black.eot");
+  src: local("Neue Machina Black"), local("NeueMachina-Black"),
+    url("assets/font/NeueMachina-Black.eot?#iefix") format("embedded-opentype"),
+    url("assets/font/NeueMachina-Black.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Black.woff") format("woff"),
+    url("assets/font/NeueMachina-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Regular.eot");
+  src: local("Neue Machina Regular"), local("NeueMachina-Regular"),
+    url("assets/font/NeueMachina-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/font/NeueMachina-Regular.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Regular.woff") format("woff"),
+    url("assets/font/NeueMachina-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Bold.eot");
+  src: local("Neue Machina Bold"), local("NeueMachina-Bold"),
+    url("assets/font/NeueMachina-Bold.eot?#iefix") format("embedded-opentype"),
+    url("assets/font/NeueMachina-Bold.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Bold.woff") format("woff"),
+    url("assets/font/NeueMachina-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Medium.eot");
+  src: local("Neue Machina Medium"), local("NeueMachina-Medium"),
+    url("assets/font/NeueMachina-Medium.eot?#iefix") format("embedded-opentype"),
+    url("assets/font/NeueMachina-Medium.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Medium.woff") format("woff"),
+    url("assets/font/NeueMachina-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("assets/font/NeueMachina-Ultrabold.eot");
+  src: local("Neue Machina Ultrabold"), local("NeueMachina-Ultrabold"),
+    url("assets/font/NeueMachina-Ultrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/font/NeueMachina-Ultrabold.woff2") format("woff2"),
+    url("assets/font/NeueMachina-Ultrabold.woff") format("woff"),
+    url("assets/font/NeueMachina-Ultrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
 }
 :root {
   --font-family: "Plus Jakarta Sans", sans-serif;
-  --custom-family: "Millik", serif;
+  --custom-family: "Neue Machina", sans-serif;
 }

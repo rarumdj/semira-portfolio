@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 
 import { Icon } from "@iconify/react";
 import ScrollToTop from "react-scroll-to-top";
+import Jobified from "./containers/CaseStudies/Jobified";
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,8 @@ function App() {
           <Routes>
             <Route path="/*" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/jobified" element={<Jobified />}></Route>
+            
           </Routes>
 
           <ScrollToTop
