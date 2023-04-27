@@ -5,7 +5,7 @@ import { JobifiedImg } from "../../../assets/images";
 const Header = () => {
   return (
     <section id="home" className="header-bg">
-      <div className="pt-20 lg:pb-28 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-[100rem]">
+      <div className="pt-20 lg:pb-28 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-7xl">
         <div className="h-full relative w-full md:mt-48 mt-20 space-y-10">
           <motion.div
           // whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}

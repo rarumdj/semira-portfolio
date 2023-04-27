@@ -3,7 +3,7 @@ import { AssesmentPlatform, JobifiedImg, VerifyApplicantInterface } from "../../
 
 const ApplicantView = () => {
   return (
-    <section className="pt-20 lg:pb-10 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-[100rem]">
+    <section className="pt-20 lg:pb-10 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-7xl">
       <div className="max-w-3xl w-full mt-10 text-white text-center">
         <h1 className="custom-font font-bold text-xl mb-2">
           Product Showcase

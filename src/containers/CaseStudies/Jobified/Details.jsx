@@ -1,9 +1,15 @@
 import React from "react";
-import { CreateAssesment, JobifiedImg, PresentationSolution, UserFlowApplicant, UserFlowBusiess } from "../../../assets/images";
+import {
+  CreateAssesment,
+  JobifiedImg,
+  PresentationSolution,
+  UserFlowApplicant,
+  UserFlowBusiess,
+} from "../../../assets/images";
 
 const Details = () => {
   return (
-    <section className="pt-10 lg:pb-10 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-[100rem]">
+    <section className="pt-10 lg:pb-10 container mx-auto flex flex-col items-center px-6 lg:px-16 w-screen max-w-7xl">
       <div className="grid sm:grid-cols-3 gap-4 max-w-3xl w-full text-white">
         <div>
           <h1 className="custom-font font-bold text-xl">Industry</h1>
@@ -41,59 +47,76 @@ const Details = () => {
         <div />
         <div className="text-white">
           <h1 className="custom-font font-bold text-xl">My Role</h1>
-          <p className="text-[#C1C2CB] opacity-70">
-            Jobified was born out of a hackathon focused on using identity
-            verification tools to develop impactful solutions. My team
-            participated by proposing a long-term solution for the increasing
-            problem of identity fraud in remote hiring.
-            <br />
-            <br />
-            To bring our vision to life, I collaborated with the other designer
-            on my team, Ibrahim Salami, to design the product from discovery to
-            prototype. I also managed the team, prioritized features, set
-            internal deadlines, and tracked progress. As a result of our
-            efforts, we were selected as a top 10 finalist among over 200
-            applicants.
+          <p className="text-[#C1C2CB]">
+            <span className="opacity-70">
+              Jobified was born out of a hackathon focused on using identity
+              verification tools to develop impactful solutions. My team
+              participated by proposing a long-term solution for the increasing
+              problem of identity fraud in remote hiring.
+              <br />
+              <br />
+              To bring our vision to life, I collaborated with the other
+              designer on my team, Ibrahim Salami, to design the product from
+              discovery to prototype. I also managed the team, prioritized
+              features, set internal deadlines, and tracked progress. As a
+              result of our efforts, we were selected as a{" "}
+            </span>
+            <span className="text-white op">top 10 finalist</span> among over{" "}
+            <span className="text-white op">200 applicants.</span>
           </p>
         </div>
       </div>
       <img src={CreateAssesment} alt="job" className="w-full mt-20" />
-      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">“Create Assessment” Interface (video may take time to load)</p>
+      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">
+        “Create Assessment” Interface (video may take time to load)
+      </p>
 
       <div className="max-w-3xl w-full mt-16 text-white">
         <h1 className="custom-font font-bold text-xl mb-2">
           Exploring Existing Solutions
         </h1>
-        <p className="text-[#C1C2CB] opacity-70">
-          To understand how to provide a unique solution, we carried a
-          competitive analysis of various existing solutions in the market, such
-          as TestGorilla, DevSkiller, e-Verify, LinkedIn, PaycomChecker,
-          GoodHire, Justworks, and Trinet.
+        <p className="text-[#C1C2CB]">
+          <span className="opacity-70">
+            To understand how to provide a unique solution, we carried a
+            competitive analysis of various existing solutions in the market,
+            such as{" "}
+          </span>
+          <span className="text-white">
+            TestGorilla, DevSkiller, e-Verify, LinkedIn, PaycomChecker,
+            GoodHire, Justworks, and Trinet.
+          </span>
         </p>
-        <ul className="text-[#C1C2CB] opacity-70 list-disc list-outside space-y-4 pl-4 py-4">
-          <li>
+        <ul className="text-[#C1C2CB] list-disc list-outside space-y-4 pl-4 py-4">
+          <li className="opacity-70">
             Our research revealed that most solutions only address individual
             problems, requiring users to switch between tools to manage the
             entire hiring process, including identity verification, skill
             vetting and assessment.
           </li>
-          <li>
+          <li className="opacity-70">
             We found that existing solutions lacked integrated identity
             verification on their skill assessment platform, making it easy for
             job applicants to cheat by hiring someone else to take the test on
             their behalf.
           </li>
           <li>
-            We also discovered the growing problem of "recruitment fraud," in
-            which scammers create fake job applications to obtain applicants'
-            personal information or money. To ensure the safety and security of
-            all users, we implemented identity verification for businesses using
-            our platform.
+            <span className="opacity-70">
+              We also discovered the growing problem of{" "}
+            </span>{" "}
+            <span className="text-white">"recruitment fraud," </span>{" "}
+            <span className="opacity-70">
+              in which scammers create fake job applications to obtain
+              applicants' personal information or money. To ensure the safety
+              and security of all users, we implemented identity verification
+              for businesses using our platform.
+            </span>
           </li>
         </ul>
       </div>
       <img src={PresentationSolution} alt="job" className="w-full mt-20" />
-      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">Presentation slides highlighting problems with existing solutions.</p>
+      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">
+        Presentation slides highlighting problems with existing solutions.
+      </p>
 
       <div className="max-w-3xl w-full mt-16 text-white">
         <h1 className="custom-font font-bold text-xl mb-2">
@@ -113,7 +136,9 @@ const Details = () => {
         </ul>
       </div>
       <img src={UserFlowBusiess} alt="job" className="w-full mt-20" />
-      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">User flow for businesses</p>
+      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">
+        User flow for businesses
+      </p>
 
       <div className="max-w-3xl w-full mt-16 text-white">
         <h1 className="custom-font font-bold text-xl mb-2">
@@ -128,8 +153,9 @@ const Details = () => {
         </p>
       </div>
       <img src={UserFlowApplicant} alt="job" className="w-full mt-20" />
-      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">User flows for applicants</p>
-
+      <p className="text-[#C1C2CB] opacity-70 md:text-sm text-xs mt-3 w-full">
+        User flows for applicants
+      </p>
     </section>
   );
 };
